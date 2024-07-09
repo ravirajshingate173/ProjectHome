@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>login to homeland</title>
+
+    <style type="text/css" >
+        body{
+            margin: 0px;
+            background-image: url("https://th.bing.com/th/id/R.1c38667858d778c71646dd47715acad9?rik=PHYzKstcbfL2og&riu=http%3a%2f%2fwww.bhmpics.com%2fwallpapers%2fcity_in_pink_sky-1600x900.jpg&ehk=rAkNm290QypT9Jw66RF6mNPyCM4WQ6QGDp31oC77aF8%3d&risl=&pid=ImgRaw&r=0") ;
+            background-size: cover ;
+            }
+
+            #brandname
+            {        
+
+              padding: 4px;  
+            }
+            .btnclass
+            {padding: 6px 30px;
+            font-size: 17px;
+            background-color: deeppink;
+            color: white;
+            border:none ;
+            border-radius: 5px;
+            }
+            .btnclass:hover{
+                background-color: #000123;
+                color: white;
+                cursor:pointer ;
+            }
+
+            .inputclass{
+                padding: 5px;
+                width: 95%;
+                border: none;
+                border-radius: 3px;
+            }
+    </style>
+
+<script type="text/javascript">
+    function validate()
+    {
+        // validation for  name 
+        if(document.f1.fname.value=="")
+        {
+             alert("Please enter your Name ");
+             document.f1.fname.focus();
+             return false;
+        }
+        if(document.f1.phoneno.value=="")
+            {
+            	 alert("Please enter phone no");
+            	 document.f1.phoneno.focus();
+            	 return false;
+            }
+        if(document.f1.phoneno.value.length !=10) 
+            {
+            	 alert("Please valid phone no");
+            	 document.f1.phoneno.focus();
+            	 return false;
+            }
+        if(document.f1.password.value=="")
+            {
+            	 alert("Please enter phone no");
+            	 document.f1.password.focus();
+            	 return false;
+            }
+    }
+        </script>
+</head>
+<body>
+    
+    <div id="brandname">
+        <h2 align="center" >HOMELAND </h2>
+    </div>
+    <form name="f1" action="success.html">
+        <table align="center"  cellpadding="10" bgcolor="pink">
+            <tr bgcolor="blueviolate">
+                <th colspan="2">
+                    <h3  >login to  Homeland</h3>
+                </th>
+            </tr>
+
+            <tr>
+                <td>Full name</td>
+                <td><input type="text" name="fname" class="inputclass"  ></td>
+            </tr>
+        
+            <tr>
+                <td>phone no</td>
+                <td><input type="number" name="phoneno" class="inputclass" > </td>
+            </tr>
+
+            <tr>
+                <td>password</td>
+                <td><input type="password" name="password" class="inputclass" > </td>
+            </tr>
+
+
+           
+            <tr>
+                <td align="center">
+                <input type="submit" value="login"  class="btnclass" onclick="return validate()"> </td>
+                <td align="center">
+                    <input type="reset" value="cancel"  class="btnclass"> </td>      
+            </tr>
+
+            </table>
+
+    </form>
+
+
+</body>
+</html>

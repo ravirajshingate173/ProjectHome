@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Search</title>
+    <style type="text/css">
+		#form
+		{
+            background: linear-gradient(to bottom right, deeppink, purple);
+            color:white;
+            border-radius: 3px;
+            width: 58%;
+            padding: 10px;
+            margin-left: 2%;
+            margin-top: 5%;
+            font-size: 15px;
+            border:3px solid gold;
+		}
+		.inputclass{
+			  padding: 5px;
+			  border:none;
+			  border-radius: 3px;
+		}
+		body{
+
+			  background-image: url("https://c1.staticflickr.com/5/4040/4264849827_e7290a2595_z.jpg?zz=1") ;
+              background-size: 1320px 700px;
+		}
+
+		.btnclass{
+			  background-color: gold;
+			  border: none;
+			  border-radius: 4px;
+			  font-size: 16px;
+			  padding: 7px 30px ;
+		}
+		.btnclass:hover{
+			  background-color: limegreen;
+			  cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+    
+
+	<div id="form">
+        <form name="f1" action="result.html">
+           <table width="100%">
+               <tr>
+                    <th colspan="2">
+                        <h2> Search Property </h2>
+                    </th>
+               </tr>
+
+               
+               <tr>
+                <td>City</td>
+                <td><input type="text" name="city" class="inputclass"></td>
+           </tr>
+
+            <tr>
+                    <td>Locality</td>
+                    <td><input type="text" name="local" class="inputclass"></td>
+               </tr>
+
+            <tr>
+                    <td>Landmark</td>
+                    <td><input type="text" name="landmark" class="inputclass"></td>
+               </tr>
+            <tr>
+                <td>Construction Age </td>
+                <td><input type="number" name="age" class="inputclass"></td>
+           </tr>
+           <tr>
+            <td>Floor</td>
+            <td><input type="number" name="floor" class="inputclass"></td>
+       </tr>
+
+            <tr>
+                <td>Price Range </td>
+                <td><input type="number" name="price" class="inputclass">  to  <input type="number" name="price" class="inputclass"></td>
+           </tr>
+
+   
+               <tr>
+                    <td>Property Type</td>
+                   <td>
+                       <input type="radio" name="pro" value="Flat/Apartment">Flat/Apartment
+                       <input type="radio" name="pro" value="Independent House/Villa">Independent House/Villa
+                       <input type="radio" name="pro" value="land">land
+                       <input type="radio" name="pro" value="other">other
+                   </td>
+               </tr>
+
+               <tr>
+                <td>Number Of Rooms</td>
+               <td>
+                   <input type="checkbox" name="no" value="1" >1
+                   <input type="checkbox" name="no" value="2" >2
+                   <input type="checkbox" name="no" value="3" >3
+                   <input type="checkbox" name="no" value="4" >4
+                   <input type="checkbox" name="no" value="5" >5
+                   <input type="checkbox" name="no" value="6+" >6+
+               </td>
+           </tr>
+
+
+           <tr>
+            <td>Amenities</td>
+            <td>
+                <input type="checkbox" name="am" value="Reserved Parking" >Reserved Parking
+                <input type="checkbox" name="am" value="Lift" >Lift
+                <input type="checkbox" name="am" value="Park/garden" >Park/garden
+                <input type="checkbox" name="am" value="Piped Gas" >Piped Gas
+                <input type="checkbox" name="am" value="Power Back Up" >Power Back Up
+                <input type="checkbox" name="am" value="Kids play area" >Kids play area
+                <input type="checkbox" name="am" value="Furnished" >Furnished
+                <input type="checkbox" name="am" value="terrace" >terrace
+                <input type="checkbox" name="am" value="fit" >fitness center
+
+            </td>
+        </tr>
+        <tr>
+             <td colspan="2" align="center">
+                <input type="submit" value="Search" class="btnclass" ">
+                <input type="reset" value="Reset" class="btnclass">
+            </td>
+        </tr>
+
+           </table> 	
+        </form>
+   </div>
+
+
+
+   
+</body>
+</html>
